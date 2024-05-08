@@ -6,11 +6,12 @@
 /*   By: mzolfagh <mzolfagh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 16:26:01 by mzolfagh          #+#    #+#             */
-/*   Updated: 2024/05/08 16:39:02 by mzolfagh         ###   ########.fr       */
+/*   Updated: 2024/05/08 20:09:33 by mzolfagh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
+#include "HumanB.hpp"
 
 int main()
 {
