@@ -6,7 +6,7 @@
 /*   By: mzolfagh <mzolfagh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 14:54:39 by mzolfagh          #+#    #+#             */
-/*   Updated: 2024/05/08 16:42:08 by mzolfagh         ###   ########.fr       */
+/*   Updated: 2024/05/09 12:45:10 by mzolfagh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ private:
 	std::string _type;
 
 public:
-	Weapon(std::string name);
+	Weapon(const std::string& name);
 	~Weapon();
-	const std::string&	getType(void);
-	void				setType(std::string name);
+	const std::string&	getType(void) const;
+	void				setType(const std::string& name);
 };
 
 
