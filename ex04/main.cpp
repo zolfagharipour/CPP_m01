@@ -6,13 +6,11 @@
 /*   By: mzolfagh <mzolfagh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/10 15:14:53 by mzolfagh          #+#    #+#             */
-/*   Updated: 2024/05/14 10:45:58 by mzolfagh         ###   ########.fr       */
+/*   Updated: 2024/05/23 15:22:02 by mzolfagh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Sifl.hpp"
-
-// ask what is meant by takes 3 parameter and create some other function
 
 int	openFiles(Sifl& sifl)
 {
@@ -31,6 +29,7 @@ int	openFiles(Sifl& sifl)
 	if (!sifl.newFile.is_open())
 	{
 		std::cout << sifl.fileName << ".replace can not be empty." << std::endl;
+		sifl.myFile.close();
 		return (0);
 	}
 	return (1);
@@ -69,4 +68,6 @@ int	main(int ac, char** av)
 	if (!openFiles(sifl))
 		return (0);
 	readNreplace(sifl);
+	sifl.myFile.close();
+	sifl.newFile.close();
 }

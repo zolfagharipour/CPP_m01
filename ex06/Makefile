@@ -6,7 +6,7 @@
 #    By: mzolfagh <mzolfagh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/13 17:11:30 by mzolfagh          #+#    #+#              #
-#    Updated: 2024/05/23 13:58:50 by mzolfagh         ###   ########.fr        #
+#    Updated: 2024/05/23 15:33:41 by mzolfagh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ clean:
 	${RM} ${OBJS} ${BONUS_OBJS}
 
 
-fclean:
+fclean: clean
 	${RM} ${NAME} ${CHECK}
 
 re: fclean all

@@ -6,7 +6,7 @@
 /*   By: mzolfagh <mzolfagh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 12:28:02 by mzolfagh          #+#    #+#             */
-/*   Updated: 2024/05/08 14:58:13 by mzolfagh         ###   ########.fr       */
+/*   Updated: 2024/05/23 14:27:20 by mzolfagh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,9 @@
 class Zombie
 {
 private:
-
+	
 	std::string		_name;
+	
 public:
 
 	Zombie(void);
@@ -31,5 +32,6 @@ public:
 
 Zombie*	newZombie(std::string name);
 void randomChump(std::string name);
+
 
 #endif

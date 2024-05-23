@@ -6,7 +6,7 @@
 /*   By: mzolfagh <mzolfagh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/08 14:17:11 by mzolfagh          #+#    #+#             */
-/*   Updated: 2024/05/08 14:50:47 by mzolfagh         ###   ########.fr       */
+/*   Updated: 2024/05/23 15:02:59 by mzolfagh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,14 @@ int	main()
 
 	std::cout << "Values:" << std::endl;
 	std::cout << "str:\t" << str << std::endl;
-	std::cout << "ptr:\t" << stringPTR << std::endl;
+	std::cout << "ptr:\t" << *stringPTR << std::endl;
 	std::cout << "ref:\t" << stringREF << std::endl;
 
-	// str.append("!");
+	str.append("!");
 	
-	// std::cout << "Values after edit:" << std::endl;
-	// std::cout << "str:\t" << str << std::endl;
-	// std::cout << "ptr:\t" << stringPTR << std::endl;
-	// std::cout << "ref:\t" << stringREF << std::endl;
+	std::cout << "Values after edit:" << std::endl;
+	std::cout << "str:\t" << str << std::endl;
+	std::cout << "ptr:\t" << *stringPTR << std::endl;
+	std::cout << "ref:\t" << stringREF << std::endl;
 
 }
