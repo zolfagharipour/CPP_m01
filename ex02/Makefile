@@ -6,7 +6,7 @@
 #    By: mzolfagh <mzolfagh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/22 12:06:03 by mzolfagh          #+#    #+#              #
-#    Updated: 2024/05/08 14:47:03 by mzolfagh         ###   ########.fr        #
+#    Updated: 2024/05/23 13:55:51 by mzolfagh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,22 +15,19 @@ NAME = brain
 
 SRCS =  main.cpp
 
-OBJS = ${SRCS:.c=.o}
+OBJS = ${SRCS:.cpp=.o}
 
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -g -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 RM	=	rm -rf
 
 all: ${NAME}
 
 ${NAME}: ${OBJS}
-	${CC} ${CFLAGS} -o ${NAME} $^
+	${CXX} ${CXXFLAGS} -o ${NAME} $^
 
-bonus: ${BONUS_OBJS}
-	${CC} ${CFLAGS} -o ${NAME} $^
-
-# clean: 
-# 	${RM} ${OBJS} ${BONUS_OBJS}
+clean: 
+	${RM} ${OBJS} ${BONUS_OBJS}
 
 
 fclean:

@@ -6,7 +6,7 @@
 #    By: mzolfagh <mzolfagh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/13 17:11:30 by mzolfagh          #+#    #+#              #
-#    Updated: 2024/05/13 17:27:57 by mzolfagh         ###   ########.fr        #
+#    Updated: 2024/05/23 13:58:50 by mzolfagh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,22 +14,20 @@ NAME = harlFilter
 
 SRCS =  main.cpp Harl.cpp
 
-OBJS = ${SRCS:.c=.o}
+OBJS = ${SRCS:.cpp=.o}
 
-CC = c++
-CFLAGS = -Wall -Wextra -Werror -g -std=c++98
+CXX = c++
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 RM	=	rm -rf
 
 all: ${NAME}
 
 ${NAME}: ${OBJS}
-	${CC} ${CFLAGS} -o ${NAME} $^
+	${CXX} ${CXXFLAGS} -o ${NAME} $^
 
-bonus: ${BONUS_OBJS}
-	${CC} ${CFLAGS} -o ${NAME} $^
 
-# clean: 
-# 	${RM} ${OBJS} ${BONUS_OBJS}
+clean: 
+	${RM} ${OBJS} ${BONUS_OBJS}
 
 
 fclean:
